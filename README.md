@@ -1,12 +1,28 @@
-# React + Vite
+# Sharon Chua Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio website can be accessed [here](https://sharon-chua.vercel.app )
 
-Currently, two official plugins are available:
+## ⚡Features
+ * 🌑 **Light/Dark Mode Toggle** Save theme preference in local storage with beautiful transitions
+* 💫 **Animated Backgrounds** Stars, meteors, scroll effects and glowing UI elements
+* 📱 **Responsive Navigation** Desktop and mobile menus with glassmorphism
+* 👧🏻 **Hero & About Sections** Showcase who you are with smooth intro animations and buttons
+* 💼 **Work Experiences Showcase** Display past job positions and tech stacks
+* 📊 **Projects Showcase** Display screenshots, tech stacks and links
+* 📩 **Contact Section** LinkedIn card and Email button
+* 🚀 **One-Click Deployment** Easily host site with Vercel and GitHub
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ⚙️Tech Stack
+* React – Component-based UI development
+* Vite – Lightning-fast build tool
+* TailwindCSS – Utility-first CSS for styling
+* Lucide Icons – Clean and beautiful icon pack
+* Radix UI – Accessible component primitives
+* GitHub & Vercel – Deployment
 
-## Expanding the ESLint configuration
+## Local Development
+* Run npm run dev
+* App will be available at: http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## References
+* https://github.com/machadop1407/beautiful-react-tailwind-portfolio
