@@ -5,7 +5,7 @@ const positions = [
   {
     id: 1,
     category: "Data Science",
-    image: "../../public/projects/project1.png",
+    image: "/projects/project1.png",
     date: "Jan 2025 - Apr 2025",
     title: "AWS Big Data Architecture ETL Pipeline Group Project",
     pointer1:
@@ -21,7 +21,7 @@ const positions = [
   {
     id: 2,
     category: "Data Science",
-    image: "../../public/projects/project2.png",
+    image: "/projects/project2.png",
     date: "Mar 2025 - Mar 2025",
     title: "Apache Airflow Individual Project - Web Scraping and Data Pipeline",
     pointer1:
@@ -33,7 +33,7 @@ const positions = [
   {
     id: 3,
     category: "Data Science",
-    image: "../../public/projects/project3.png",
+    image: "/projects/project3.png",
     date: "Jan 2025 - Apr 2025",
     title: "Text Mining and Language Processing NLP Group Project",
     pointer1:
@@ -49,7 +49,7 @@ const positions = [
   {
     id: 4,
     category: "Data Science",
-    image: "../../public/projects/project4.jpg",
+    image: "/projects/project4.jpg",
     date: "Jan 2024 - Apr 2024",
     title: "Data Analytics in Asia Group Project (Bangkok, Thailand)",
     pointer1:
@@ -61,7 +61,7 @@ const positions = [
   {
     id: 5,
     category: "Data Science",
-    image: "../../public/projects/project5.png",
+    image: "/projects/project5.png",
     date: "Jan 2023 - Apr 2023",
     title: "Visual Analytics for Business Intelligence Group Project",
     pointer1:
@@ -73,7 +73,7 @@ const positions = [
   {
     id: 6,
     category: "Web Development",
-    image: "../../public/projects/project6.png",
+    image: "/projects/project6.png",
     date: "May 2024 - Nov 2024",
     title:
       "Final Year Project with Narwhal Financial Services Pte Ltd (Narfin)",
@@ -90,7 +90,7 @@ const positions = [
   {
     id: 7,
     category: "Web Development",
-    image: "../../public/projects/project7.jpg",
+    image: "/projects/project7.jpg",
     date: "Aug 2023 - Oct 2023",
     title: "SMU Women In Tech x Google Ignite! 2023 Hackathon",
     pointer1:
@@ -190,7 +190,7 @@ export const ProjectSection = () => {
                       className="p-2 text-foreground text-base border rounded-lg bg-border/70 flex justify-center items-center"
                     >
                       <img
-                        src={`../../public/projects/${tag.toLowerCase()}.png`}
+                        src={`projects/${tag.toLowerCase()}.png`}
                         alt={tag}
                         className="w-6 h-6 inline-block mr-2 object-contain"
                       />
