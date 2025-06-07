@@ -13,7 +13,7 @@ export const ContactSection = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3">
                             <div className="col-span-1 flex justify-center items-center mt-5">
                                 <img
-                                    src="../../public/linkedin profile.png"
+                                    src="linkedin profile.png"
                                     alt="linkedin profile photo"
                                     className="rounded-full aspect-square w-[110px] object-cover"
                                 />
@@ -25,7 +25,7 @@ export const ContactSection = () => {
                                 <p className="text-sm">Skilled in Python, SQL, PowerBI, Tableau, Databricks, AWS</p>
 
                                 <div className="w-40 mt-5 rounded-lg linkedin-button flex gap-2 justify-center items-center">
-                                    <img src="../../public/linkedin icon.png" className="h-5 w-5" />
+                                    <img src="linkedin icon.png" className="h-5 w-5" />
                                     <a
                                         href="https://www.linkedin.com/in/sharoncyt/"
                                         target="_blank"
