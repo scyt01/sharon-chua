@@ -113,9 +113,9 @@ export const ProjectSection = () => {
     <section id="projects" className="py-7 px-4 relative">
       <div className="section-container mx-auto max-w-6xl">
         <div>
-          <p className="md:text-[55px] text-secondary font-bold">
+          <p className="text-4xl md:text-[55px] text-secondary font-bold">
             Projects
-            <span className="text-sm font-normal text-foreground pl-2">
+            <span className="text-[8px] md:text-sm font-normal text-foreground pl-2">
               {" "}
               More projects will be updated soon!
             </span>
