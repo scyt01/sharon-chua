@@ -23,7 +23,7 @@ export const HeroSection = () => {
 
       <div className="container flex justify-center md:justify-start ml-0 md:ml-40 h-auto object-cover mt-8 md:mt-0">
         <img
-          src="../../public/profile.jpg"
+          src="profile.jpg"
           alt="profile photo"
           className="rounded-full aspect-square w-[300px]"
         />
