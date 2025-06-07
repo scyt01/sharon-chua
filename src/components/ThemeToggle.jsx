@@ -11,7 +11,7 @@ export const ThemeToggle = () => {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     } 
-    if (storedTheme === "") {
+    if (storedTheme === undefined) {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     }
