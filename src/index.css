@@ -1,0 +1,268 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+
+  --color-card: hsl(var(--card));
+
+  /* Hero section */
+  --animate-float: float 6s ease-in-out infinite;
+
+  /* Pulsating stars background animation */
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
+
+  /* Falling meteors background animation */
+  --animate-meteor: meteor 5s linear infinite;
+
+  /* Text animation */
+  --animate-fade-in: fade-in 0.7s ease-out forwards;
+  --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
+  --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
+  --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
+  --animate-fade-in-delay-4: fade-in 0.7s ease-out 0.8s forwards;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  @keyframes pulse-subtle {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+
+    70% {
+      opacity: 1;
+    }
+
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+
+@layer base {
+
+  /* Light version */
+  :root {
+    h1 {
+      font-size: var(--text-4xl);
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: var(--text-2xl);
+    }
+
+    p {
+      font-size: var(--text-lg)
+    }
+
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+
+    --primary: 215 100% 34%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 48,
+    97%,
+    48%;
+    --secondary-foreground: 180,
+    100%,
+    50%;
+
+    /* TO CHANGE LATER currently off-white colour */
+    --border: 214 32% 91%;
+  }
+
+  /* Dark version */
+  .dark {
+    h1 {
+      font-size: var(--text-4xl);
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: var(--text-2xl);
+    }
+
+    p {
+      font-size: var(--text-lg)
+    }
+
+    --background: 222 47% 4%;
+    --foreground: 213 31% 91%;
+
+    --card: 0 0% 0%;
+
+    --primary: 180,
+    100%,
+    50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 43,
+    100%,
+    71%;
+    --secondary-foreground: 180,
+    100%,
+    50%;
+
+    /* TO CHANGE LATER currently grey colour */
+    --border: 217 33% 20%;
+  }
+
+  /* Apply to everything */
+  * {
+    @apply border-border;
+  }
+
+  /* HTML document to have a smooth scroll */
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  /* Add media queries so that page and elements are responsive on big and small screens */
+  @media (width >=640px) {
+    max-width: 640px;
+  }
+
+  @media (width >=768px) {
+    max-width: 768px;
+  }
+
+  @media (width >=1024px) {
+    max-width: 1024px;
+  }
+
+  @media (width >=1280px) {
+    max-width: 1280px;
+  }
+
+  @media (width >=1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility section-container {
+  padding: 30px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  @apply bg-background rounded-xl;
+
+
+  /* Add media queries so that page and elements are responsive on big and small screens */
+  @media (width >=640px) {
+    max-width: 640px;
+  }
+
+  @media (width >=768px) {
+    max-width: 768px;
+  }
+
+  @media (width >=1024px) {
+    max-width: 1024px;
+  }
+
+  @media (width >=1280px) {
+    max-width: 1280px;
+  }
+
+  @media (width >=1400px) {
+    max-width: 1400px;
+  }
+}
+
+@utility text-glow {
+  @apply relative text-primary;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Apply to cards */
+@utility card-hover {
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+@utility gradient-border {
+  @apply relative rounded-md;
+  /* background: linear-gradient(to, right, hsl(var(--card)), hsl(var(--card))); */
+  background: linear-gradient(to right, var(--card), var(--card));
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
+
+/* Apply to buttons */
+@utility cosmic-button {
+  @apply px-6 py-2 rounded-full border border-primary text-primary text-center font-semibold transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,255,255,0.5)] hover:scale-105 active:scale-95;
+}
+
+@utility linkedin-button {
+  @apply px-6 py-2 rounded-full bg-[#0072b1] text-white text-center font-semibold transition-all duration-300 hover:shadow-[0_0_10px_rgba(0,255,255,0.5)] hover:scale-105 active:scale-95;
+}
+
+@utility star {
+  @apply absolute rounded-full bg-white;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.4);
+}
+
+@utility meteor {
+  @apply absolute bg-linear-to-r from-white via-white to-transparent rounded-full;
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
