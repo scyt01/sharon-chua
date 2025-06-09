@@ -41,7 +41,7 @@ const positions = [
     pointer2:
       "Evaluated CRF model using precision, recall and F1-score with gold truth data labelled by ChatGPT",
     pointer3:
-      "Visualised results using entity frequency bar and pie charts and display good and bad text snippet example using Spacy Dispacy Entity Visualizer",
+      "Visualised results using entity frequency bar and pie charts and display text snippet examples using Spacy Dispacy Entity Visualizer",
     tags: ["Python", "Scikit-learn", "Spacy"],
     link: "https://sparkly-walker-a7c.notion.site/SMU-Text-Mining-and-Language-Processing-Group-Project-NLP-Natural-Language-Processing-NER-Named-En-1fee93d40bc7808a854bf610c19c97c5?source=copy_link",
   },
@@ -100,9 +100,21 @@ const positions = [
     tags: ["Flutter", "Tiled", "Figma"],
     link: "https://sparkly-walker-a7c.notion.site/SMU-Women-In-Tech-x-Google-Ignite-2023-Hackathon-Competition-Google-Flutter-110e93d40bc780b89964c4ac28f52451",
   },
+
+  {
+    id: 8,
+    category: "AI",
+    image: "/projects/project8.png",
+    date: "Oct 2024",
+    title: "Use of Artificial Intelligence (AI) in the Healthcare Industry Research Paper",
+    pointer1:
+      "Reviewed the history and market size of AI, use cases focusing on predictive and preventive healthcare globally in areas of medical diagnosis such as telemedicine, healthcare data management, COVID-19 pandemic management and the future of AI in terms of biases, regulation and potential initiatives through the lens of smart cities",
+    tags: [],
+    link: "/projects/Use of Artificial Intelligence (AI) in the Healthcare Industry.pdf",
+  },
 ];
 
-const categories = ["Data Science", "Web Development"];
+const categories = ["Data Science", "Web Development", "AI"];
 
 export const ProjectSection = () => {
   const [activeCategory, setActiveCategory] = useState("Data Science");
