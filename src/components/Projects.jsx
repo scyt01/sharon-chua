@@ -22,7 +22,7 @@ const positions = [
     id: 2,
     category: "Data Science",
     image: "/projects/project2.png",
-    date: "Mar 2025 - Mar 2025",
+    date: "Mar 2025",
     title: "Apache Airflow Individual Project - Web Scraping and Data Pipeline",
     pointer1:
       "Created a data pipeline with Airflow DAG to retrieve at least 100 video data from YouTube based on a dynamic topic through Python Selenium web scraping and store the video data into MongoDB database",
