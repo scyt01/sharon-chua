@@ -22,7 +22,7 @@ export const ContactSection = () => {
                                 <h2 className="font-semibold">Sharon Chua</h2>
                                 <p className="text-lg text-foreground/80">Aspiring Data Analyst/Engineer</p>
                                 <p className="text-sm">Graduating Business Analytics student from SMU</p>
-                                <p className="text-sm">Skilled in Python, SQL, PowerBI, Tableau, Databricks, AWS</p>
+                                <p className="text-sm">Skilled in AWS, Python, SQL, PowerBI, Tableau and Databricks</p>
 
                                 <div className="w-40 mt-5 rounded-lg linkedin-button flex gap-2 justify-center items-center">
                                     <img src="linkedin icon.png" className="h-5 w-5" />
