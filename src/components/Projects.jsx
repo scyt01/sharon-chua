@@ -1,11 +1,26 @@
 import { cn } from "@/lib/utils";
+import { ExternalLink, FileText, Github, Youtube } from "lucide-react";
 import { useState } from "react";
 
 const positions = [
   {
     id: 1,
-    category: "Data Science",
+    category: "AI",
     image: "/projects/project1.png",
+    date: "Oct 2024",
+    title:
+      "Use of Artificial Intelligence (AI) in the Healthcare Industry Research Paper",
+    pointer1:
+      "Reviewed the history and market size of AI, use cases focusing on predictive and preventive healthcare globally in areas of medical diagnosis such as telemedicine, healthcare data management, COVID-19 pandemic management and future of AI in terms of biases, regulation and potential initiatives through the lens of smart cities",
+    tags: [],
+    filelink:
+      "/projects/Use of Artificial Intelligence (AI) in the Healthcare Industry.pdf",
+  },
+
+  {
+    id: 2,
+    category: "Data Science",
+    image: "/projects/project2.png",
     date: "Jan 2025 - Apr 2025",
     title: "AWS Big Data Architecture ETL Pipeline Group Project",
     pointer1:
@@ -15,25 +30,27 @@ const positions = [
     pointer3:
       "Utilised AWS S3, Step Functions, Lambda, Glue, Athena, Sagemaker, Cloudwatch, Quicksight to build a scalable and efficient data pipeline as the final solution",
     tags: ["AWS", "Python"],
-    link: "https://sparkly-walker-a7c.notion.site/SMU-Big-Data-Architecture-Group-Project-AWS-Amazon-Web-Services-ETL-Pipeline-1fee93d40bc780089b84ed8a1ab7bbf4?source=copy_link",
-  },
-
-  {
-    id: 2,
-    category: "Data Science",
-    image: "/projects/project2.png",
-    date: "Mar 2025",
-    title: "Apache Airflow Individual Project - Web Scraping and Data Pipeline",
-    pointer1:
-      "Created a data pipeline with Airflow DAG to retrieve at least 100 video data from YouTube based on a dynamic topic through Python Selenium web scraping and store the video data into MongoDB database",
-    tags: ["Airflow", "Ubuntu", "MongoDB", "Python", "Selenium"],
-    link: "https://youtu.be/RsWLrtI_8Kc",
+    githublink: "https://github.com/scyt01",
   },
 
   {
     id: 3,
     category: "Data Science",
     image: "/projects/project3.png",
+    date: "Mar 2025",
+    title: "Apache Airflow Individual Project - Web Scraping and Data Pipeline",
+    pointer1:
+      "Created a data pipeline with Airflow DAG to retrieve at least 100 video data from YouTube based on a dynamic topic through Python Selenium web scraping",
+    pointer2: "Stored retrieved video data into MongoDB database",
+    tags: ["Airflow", "Ubuntu", "MongoDB", "Python", "Selenium"],
+    githublink: "https://github.com/scyt01",
+    youtubelink: "https://youtu.be/RsWLrtI_8Kc",
+  },
+
+  {
+    id: 4,
+    category: "Data Science",
+    image: "/projects/project4.png",
     date: "Jan 2025 - Apr 2025",
     title: "Text Mining and Language Processing NLP Group Project",
     pointer1:
@@ -43,37 +60,62 @@ const positions = [
     pointer3:
       "Visualised results using entity frequency bar and pie charts and display text snippet examples using Spacy Dispacy Entity Visualizer",
     tags: ["Python", "Scikit-learn", "Spacy"],
-    link: "https://sparkly-walker-a7c.notion.site/SMU-Text-Mining-and-Language-Processing-Group-Project-NLP-Natural-Language-Processing-NER-Named-En-1fee93d40bc7808a854bf610c19c97c5?source=copy_link",
-  },
-
-  {
-    id: 4,
-    category: "Data Science",
-    image: "/projects/project4.jpg",
-    date: "Jan 2024 - Apr 2024",
-    title: "Data Analytics in Asia Group Project (Bangkok, Thailand)",
-    pointer1:
-      "Solved real-world challenges and propose improvements for a Japanese social media app by creating Random Forest and SGDRegressor predictive models with Python Pandas and NumPy and visualise analysis results with Tableau for over 1,000,000 rows of data",
-    tags: ["GitHub", "Tableau", "AWS", "Python"],
-    link: "https://x.smu.edu.sg/getting-involved/smu-x-opportunity-award/bangkok-every-day-adventure-land-smiles",
+    githublink: "https://github.com/scyt01",
   },
 
   {
     id: 5,
     category: "Data Science",
-    image: "/projects/project5.png",
+    image: "/projects/project5.jpg",
+    date: "Jan 2024 - Apr 2024",
+    title: "Data Analytics in Asia Group Project (Bangkok, Thailand)",
+    pointer1:
+      "Solved real-world challenges and propose improvements for a Japanese social media app by creating Random Forest and SGDRegressor predictive models with Python Pandas and NumPy and visualise results with Tableau for over 1,000,000 rows of data",
+    tags: ["GitHub", "Tableau", "AWS", "Python"],
+    link: "https://x.smu.edu.sg/getting-involved/smu-x-opportunity-award/bangkok-every-day-adventure-land-smiles",
+  },
+
+  {
+    id: 6,
+    category: "Visualisations",
+    image: "/projects/project6.png",
     date: "Jan 2023 - Apr 2023",
     title: "Visual Analytics for Business Intelligence Group Project",
     pointer1:
       "Developed an interactive dashboard using Tableau and D3.js to visualise the factors that affect World Happiness from 2015 to 2022",
     tags: ["D3.js", "Tableau", "Python"],
-    link: "https://sparkly-walker-a7c.notion.site/SMU-Visual-Analytics-for-Business-Intelligence-Group-Project-Tableau-and-D3-js-ab5d57211f0a4b58961a81f3a75a5bf8",
+    link: "https://va-t3-world-happiness-d3-dashboard.netlify.app/",
+    filelink: "/projects/World Happiness Report.pdf",
   },
 
   {
-    id: 6,
+    id: 7,
+    category: "Visualisations",
+    image: "/projects/project7.png",
+    date: "May 2023",
+    title: "Chicago Taxi Trips (2015-2017)",
+    pointer1:
+      "Analysis of taxi trips such as average fare distribution and payment methods, top 5 taxi companies in Chicago and most popular pickup and dropoff locations using Chicago Taxi Trips dataset from Google BigQuery",
+    tags: ["Tableau"],
+    link: "https://public.tableau.com/views/ChicagoTaxiTrips_16850874982430/Main?:language=en-US&:display_count=n&:origin=viz_share_link",
+  },
+
+  {
+    id: 8,
+    category: "Visualisations",
+    image: "/projects/project8.png",
+    date: "Dec 2023",
+    title: "Grocery Sales (2022)",
+    pointer1:
+      "Visualised Actual vs Target revenue by month, Sales dollars by sub-category, Sales quantity by month and Average unit price by category, sub-category and month",
+    tags: ["PowerBI", "Python"],
+    githublink: "https://github.com/scyt01",
+  },
+
+  {
+    id: 9,
     category: "Web Development",
-    image: "/projects/project6.png",
+    image: "/projects/project9.png",
     date: "May 2024 - Nov 2024",
     title:
       "Final Year Project with Narwhal Financial Services Pte Ltd (Narfin)",
@@ -84,37 +126,63 @@ const positions = [
     pointer3:
       "Conducted User Acceptance Testing (UAT) under individual user and group settings to gather feedback and ensure the system meets user requirements",
     tags: ["OutSystems", "Postman", "Figma"],
-    link: "https://sparkly-walker-a7c.notion.site/SMU-Final-Year-Project-2024-Improve-functionality-of-SMU-tBank-Corporate-Internet-Banking-system--12de93d40bc7808c8443f8f032d3f742",
+    link: "https://computing.smu.edu.sg/smu-teaching-bank",
+    filelink: "/projects/Final Year Project.pdf",
   },
 
   {
-    id: 7,
+    id: 10,
     category: "Web Development",
-    image: "/projects/project7.jpg",
+    image: "/projects/project10.jpg",
     date: "Aug 2023 - Oct 2023",
     title: "SMU Women In Tech x Google Ignite! 2023 Hackathon",
     pointer1:
-      "Developed a mobile game collaboratively in a team of 5 to encourage sustainable living habits among youths aged 9-16 using Google Flutter and Dart programming language",
+      "Developed a mobile game collaboratively in a team of 5 to encourage sustainable living habits among youths aged 9-16 using Google Flutter and Dart",
     pointer2:
       "Designed game map and characters using Tiled Map Editor and prototyped UI in Figma",
     tags: ["Flutter", "Tiled", "Figma"],
-    link: "https://sparkly-walker-a7c.notion.site/SMU-Women-In-Tech-x-Google-Ignite-2023-Hackathon-Competition-Google-Flutter-110e93d40bc780b89964c4ac28f52451",
+    githublink: "https://github.com/ZhiLinR/GI-T8-Winx-Club",
+    filelink: "/projects/Mobile Game Project.pdf",
   },
 
   {
-    id: 8,
-    category: "AI",
-    image: "/projects/project8.png",
-    date: "Oct 2024",
-    title: "Use of Artificial Intelligence (AI) in the Healthcare Industry Research Paper",
+    id: 11,
+    category: "Cybersecurity",
+    image: "/projects/project11.png",
+    date: "Jan 2025 - Apr 2025",
+    title: "Common Vulnerabilities and Exposures (CVE) Group Research Project",
     pointer1:
-      "Reviewed the history and market size of AI, use cases focusing on predictive and preventive healthcare globally in areas of medical diagnosis such as telemedicine, healthcare data management, COVID-19 pandemic management and the future of AI in terms of biases, regulation and potential initiatives through the lens of smart cities",
+      "Researched on CVE-2024-21413 MonikerLink Vulnerability in Microsoft Outlook",
+    pointer2:
+      "Learnt about cybersecurity fundamentals with hands-on exercises using Kali Linux and Metasploitable such as CIA triad (Confidentiality, Integrity, Availability), SSL/TLS handshake, symmetric encryption (AES), asymmetric encryption (RSA), HMAC, digital certificate, user authentication & identity management, access control, security in terms of network, software and web.",
+    tags: ["Kali Linux", "Metasploitable"],
+    filelink: "/projects/Cybersecurity Presentation.pdf",
+    youtubelink: "https://youtu.be/Iin1F5K8pQo?si=duD0HMvMCaxEJTre",
+  },
+
+  {
+    id: 12,
+    category: "Behavioural Change",
+    image: "/projects/project12.png",
+    date: "Aug 2024 - Nov 2024",
+    title: "Encourage Seniors To Use E-Payment in Singapore (IMDA)",
+    pointer1:
+      "Created behavioural strategy and ad campaign to improve the existing Infocomm Media Development Authority (IMDA) of Singapore’s Seniors Go Digital, E-payment Learning Journey Programme to change Singapore seniors' perception of E-Payments",
+    pointer2:
+      "Applied psychology and behavioural science theories from classroom learning",
     tags: [],
-    link: "/projects/Use of Artificial Intelligence (AI) in the Healthcare Industry.pdf",
+    filelink: "/projects/IMDA Project.pptx",
   },
 ];
 
-const categories = ["Data Science", "Web Development", "AI"];
+const categories = [
+  "AI",
+  "Data Science",
+  "Visualisations",
+  "Web Development",
+  "Cybersecurity",
+  "Behavioural Change",
+];
 
 export const ProjectSection = () => {
   const [activeCategory, setActiveCategory] = useState("Data Science");
@@ -122,19 +190,15 @@ export const ProjectSection = () => {
     (position) => position.category === activeCategory
   );
   return (
-    <section id="projects" className="py-7 px-4 relative">
+    <section id="projects" className="py-9 px-4 relative">
       <div className="section-container mx-auto max-w-6xl">
         <div>
-          <p className="text-4xl md:text-[55px] text-secondary font-bold">
+          <p className="text-4xl md:text-[55px] text-secondary font-bold mb-2">
             Projects
-            <span className="text-[8px] md:text-sm font-normal text-foreground pl-2">
-              {" "}
-              More projects will be updated soon!
-            </span>
           </p>
         </div>
 
-        <div className="flex mb-3 border-b-2">
+        <div className="flex flex-wrap mb-3 border-b-2">
           {categories.map((category, key) => (
             <button
               key={key}
@@ -159,36 +223,69 @@ export const ProjectSection = () => {
               className="group bg-card border rounded-xl overflow-hidden shadow-xs card-hover grid grid-cols-1 md:grid-cols-3"
             >
               <div className="col-span-1">
-                <a
-                  href={position.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={position.image}
-                    alt={position.title}
-                    className="rounded-lg w-full h-full object-contain"
-                  />
-                </a>
+                <img
+                  src={position.image}
+                  alt={position.title}
+                  className="rounded-lg w-full h-full object-contain"
+                />
               </div>
 
               <div className="p-6 col-span-2 space-y-3">
-                <div className="flex flex-wrap text-lg justify-end">
+                <div className="flex justify-between items-center">
                   <span className="text-sm">{position.date}</span>
+                  <div className="flex">
+                    {position.githublink && (
+                      <a
+                        href={position.githublink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mr-3"
+                      >
+                        <Github />
+                      </a>
+                    )}
+
+                    {position.link && (
+                      <a
+                        href={position.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mr-3"
+                      >
+                        <ExternalLink />
+                      </a>
+                    )}
+
+                    {position.filelink && (
+                      <a
+                        href={position.filelink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mr-3"
+                      >
+                        <FileText />
+                      </a>
+                    )}
+
+                    {position.youtubelink && (
+                      <a
+                        href={position.youtubelink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mr-3"
+                      >
+                        <Youtube />
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <div className="flex flex-wrap font-bold text-lg">
-                  <a
-                    href={position.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {position.title}
-                  </a>
+                  {position.title}
                 </div>
 
                 <div>
-                  <ul className="list-disc pl-10">
+                  <ul className="list-disc pl-5 pr-10">
                     {position.pointer1 && <li>{position.pointer1}</li>}
                     {position.pointer2 && <li>{position.pointer2}</li>}
                     {position.pointer3 && <li>{position.pointer3}</li>}
