@@ -136,7 +136,7 @@ const positions = [
     pointer1:
       "Migrated the current SMU tBank Corporate Internet Banking System frontend UI from Vue.js which a previous team has done to OutSystems low code application platform",
     pointer2:
-      "Improved existing banking features and developed new features in OutSystems according to existing API documentation such as Beneficiaries, Standing Instructions, Bill Payment, Direct Debit Authorization",
+      "Improved existing banking features and developed new features in OutSystems according to existing API documentation such as Beneficiaries, Standing Instructions, Bill Payment, Direct Debit Authorization with regular sprints following Agile and Scrum methodologies",
     pointer3:
       "Conducted User Acceptance Testing (UAT) under individual user and group settings to gather feedback and ensure the system meets user requirements",
     tags: ["OutSystems", "Postman", "Figma"],
