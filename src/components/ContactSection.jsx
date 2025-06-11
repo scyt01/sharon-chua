@@ -24,7 +24,7 @@ export const ContactSection = () => {
                   Aspiring Data Analyst/Engineer
                 </p>
                 <p className="text-sm">
-                  Graduating Business Analytics student from SMU
+                  SMU Business Analytics Graduate
                 </p>
                 <p className="text-sm">
                   Skilled in AWS, Python, SQL, Power BI, Tableau and Databricks
