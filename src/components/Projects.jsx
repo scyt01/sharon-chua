@@ -108,7 +108,7 @@ const positions = [
     title: "Grocery Sales (2022)",
     pointer1:
       "Visualised Actual vs Target revenue by month, Sales dollars by sub-category, Sales quantity by month and Average unit price by category, sub-category and month",
-    tags: ["PowerBI", "Python"],
+    tags: ["Power BI", "Python"],
     githublink: "https://github.com/scyt01/Grocery-Sales",
   },
 

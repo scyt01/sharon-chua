@@ -27,7 +27,7 @@ export const ContactSection = () => {
                   Graduating Business Analytics student from SMU
                 </p>
                 <p className="text-sm">
-                  Skilled in AWS, Python, SQL, PowerBI, Tableau and Databricks
+                  Skilled in AWS, Python, SQL, Power BI, Tableau and Databricks
                 </p>
 
                 <div className="w-40 mt-5 rounded-lg linkedin-button flex gap-2 justify-center items-center">
