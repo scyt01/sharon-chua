@@ -56,7 +56,7 @@ const positions = [
     pointer1:
       "Trained Named Entity Recognition (NER) model using Python sklearn-crfsuite and NLTK",
     pointer2:
-      "Evaluated CRF model using precision, recall and F1-score with gold truth labelled by ChatGPT",
+      "Evaluated model using precision, recall and F1-score with gold truth labelled by ChatGPT",
     pointer3:
       "Visualised results using entity frequency bar and pie charts and display text snippet examples using Spacy Dispacy Entity Visualizer",
     tags: ["Python", "Scikit-learn", "Spacy"],
