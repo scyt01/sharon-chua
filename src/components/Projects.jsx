@@ -30,7 +30,7 @@ const positions = [
     pointer3:
       "Utilised AWS S3, Step Functions, Lambda, Glue, Athena, Sagemaker, Cloudwatch, Quicksight to build a scalable and efficient data pipeline as the final solution",
     tags: ["AWS", "Python"],
-    githublink: "https://github.com/scyt01",
+    githublink: "https://github.com/scyt01/AWS-ETL-Pipeline",
   },
 
   {
@@ -43,7 +43,7 @@ const positions = [
       "Created a data pipeline with Airflow DAG to retrieve at least 100 video data from YouTube based on a dynamic topic through Python Selenium web scraping",
     pointer2: "Stored retrieved video data into MongoDB database",
     tags: ["Airflow", "Ubuntu", "MongoDB", "Python", "Selenium"],
-    githublink: "https://github.com/scyt01",
+    githublink: "https://github.com/scyt01/Apache-Airflow-Pipeline",
     youtubelink: "https://youtu.be/RsWLrtI_8Kc",
   },
 
@@ -60,7 +60,7 @@ const positions = [
     pointer3:
       "Visualised results using entity frequency bar and pie charts and display text snippet examples using Spacy Dispacy Entity Visualizer",
     tags: ["Python", "Scikit-learn", "Spacy"],
-    githublink: "https://github.com/scyt01",
+    githublink: "https://github.com/scyt01/NER-sklearn-crfsuite",
   },
 
   {
@@ -109,13 +109,27 @@ const positions = [
     pointer1:
       "Visualised Actual vs Target revenue by month, Sales dollars by sub-category, Sales quantity by month and Average unit price by category, sub-category and month",
     tags: ["PowerBI", "Python"],
-    githublink: "https://github.com/scyt01",
+    githublink: "https://github.com/scyt01/Grocery-Sales",
   },
 
   {
     id: 9,
-    category: "Web Development",
+    category: "Visualisations",
     image: "/projects/project9.png",
+    date: "Aug 2021 - Oct 2021",
+    title: "HDB Resale Analysis (January 2017 to June 2020)",
+    pointer1:
+      "This was a take-home assignment in Heicoders Academy AI100 training course",
+    pointer2:
+      "Analysis of HDB Resale data using Python libraries such as Pandas, Folium, Matplotlib to gain insights to make better decisions in choosing a HDB Resale flat or  BTO flats that are likely to appreciate in the resale market",
+    tags: ["Python"],
+    githublink: "https://github.com/scyt01/HDB-Resale",
+  },
+
+  {
+    id: 10,
+    category: "Web Development",
+    image: "/projects/project10.png",
     date: "May 2024 - Nov 2024",
     title:
       "Final Year Project with Narwhal Financial Services Pte Ltd (Narfin)",
@@ -131,9 +145,9 @@ const positions = [
   },
 
   {
-    id: 10,
+    id: 11,
     category: "Web Development",
-    image: "/projects/project10.jpg",
+    image: "/projects/project11.jpg",
     date: "Aug 2023 - Oct 2023",
     title: "SMU Women In Tech x Google Ignite! 2023 Hackathon",
     pointer1:
@@ -146,24 +160,24 @@ const positions = [
   },
 
   {
-    id: 11,
+    id: 12,
     category: "Cybersecurity",
-    image: "/projects/project11.png",
+    image: "/projects/project12.png",
     date: "Jan 2025 - Apr 2025",
     title: "Common Vulnerabilities and Exposures (CVE) Group Research Project",
     pointer1:
       "Researched on CVE-2024-21413 MonikerLink Vulnerability in Microsoft Outlook",
     pointer2:
-      "Learnt about cybersecurity fundamentals with hands-on exercises using Kali Linux and Metasploitable such as CIA triad (Confidentiality, Integrity, Availability), SSL/TLS handshake, symmetric encryption (AES), asymmetric encryption (RSA), HMAC, digital certificate, user authentication & identity management, access control, security in terms of network, software and web.",
+      "Learnt about cybersecurity fundamentals with hands-on exercises using Kali Linux and Metasploitable such as CIA triad (Confidentiality, Integrity, Availability), SSL/TLS handshake, symmetric encryption (AES), asymmetric encryption (RSA), HMAC, digital certificate, user authentication & identity management, access control, security in terms of network, software and web",
     tags: ["Kali Linux", "Metasploitable"],
     filelink: "/projects/Cybersecurity Presentation.pdf",
     youtubelink: "https://youtu.be/Iin1F5K8pQo?si=duD0HMvMCaxEJTre",
   },
 
   {
-    id: 12,
+    id: 13,
     category: "Behavioural Change",
-    image: "/projects/project12.png",
+    image: "/projects/project13.png",
     date: "Aug 2024 - Nov 2024",
     title: "Encourage Seniors To Use E-Payment in Singapore (IMDA)",
     pointer1:
