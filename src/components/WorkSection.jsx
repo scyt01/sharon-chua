@@ -27,7 +27,7 @@ const positions = [
             "Automated weekly data cleaning process with Python for over 10,000 rows of data",
         pointer3:
             "Created key sales and logistics dashboards with Microsoft Power BI for Higher Management’s review",
-        tags: ["SAP Analytics Cloud", "PowerBI", "Python"],
+        tags: ["SAP Analytics Cloud", "Power BI", "Python"],
         link: "https://www.siemens.com/sg/en.html",
     },
 ];
