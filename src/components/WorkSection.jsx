@@ -44,7 +44,7 @@ export const WorkSection = () => {
                     {positions.map((position, key) => (
                         <div
                             key={key}
-                            className="group bg-card border rounded-xl overflow-hidden shadow-xs card-hover grid grid-cols-1 md:grid-cols-3 gap-2"
+                            className="group bg-card border rounded-xl overflow-hidden shadow-xs card-hover grid grid-cols-1 md:grid-cols-3"
                         >
                             <div className="col-span-1">
                                 <a
@@ -55,7 +55,7 @@ export const WorkSection = () => {
                                     <img
                                         src={position.image}
                                         alt={position.title}
-                                        className="rounded-lg w-full h-full object-cover"
+                                        className="rounded-lg w-full h-full object-contain"
                                     />
                                 </a>
                             </div>
